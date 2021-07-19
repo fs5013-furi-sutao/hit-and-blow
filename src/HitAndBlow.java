@@ -193,7 +193,7 @@ public class HitAndBlow {
     private static boolean hasOverlappedNum(String str) {
         for (int i = 0; i < str.length(); i++) {
 
-            String num = str.substring(i, i + 1);
+            String num = pickUpOneChar(str, i);
             for (int j = i; j < str.length(); j++) {
                 if (i == j) {
                     continue;
